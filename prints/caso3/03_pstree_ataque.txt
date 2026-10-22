@@ -1,0 +1,13 @@
+$ /opt/vol3dev/bin/vol -q -f linux.mem linux.pstree 2>/dev/null | grep -E 'PID|sshd|bash|sh|su|insmod' | head -20
+OFFSET (V)	PID	TID	PPID	COMM
+* 0x890488daaf00	703	703	1	sshd
+** 0x890492cc2f00	1002	1002	703	sshd
+*** 0x890492ce8000	1075	1075	1002	sshd
+**** 0x8904998c9780	1076	1076	1075	bash
+***** 0x8904998cc680	1093	1093	1076	sh
+****** 0x8904998caf00	1095	1095	1093	su
+******* 0x8904998c8000	1097	1097	1095	bash
+** 0x890492cc0000	1099	1099	703	sshd
+*** 0x8904939a8000	1197	1197	1099	bash
+**** 0x890496558000	1804	1804	1197	insmod
+* 0x89048af32f00	225	225	2	kdmflush

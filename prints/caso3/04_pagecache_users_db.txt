@@ -1,0 +1,6 @@
+$ /opt/vol3dev/bin/vol -q -f linux.mem linux.pagecache.Files 2>/dev/null | cut -f4,10,11,13 | grep -E 'InodeNum|users.db|pkexecc|crontabs'
+InodeNum	AccessTime	ModificationTime	FilePath
+655377	2023-11-07 03:50:17.239537 UTC	2023-11-07 03:50:11.215537 UTC	/home/paco/pkexecc
+655374	2023-11-07 03:42:22.744592 UTC	2023-11-07 03:35:43.532862 UTC	/home/paco/users.db
+131184	2023-11-07 03:52:01.012887 UTC	2023-11-07 03:51:30.788869 UTC	/var/spool/cron/crontabs
+131127	2023-11-07 03:51:30.788869 UTC	2023-11-07 03:51:30.788869 UTC	/var/spool/cron/crontabs/root

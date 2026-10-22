@@ -1,0 +1,8 @@
+$ grep -E 'PID|useradd|chpasswd|usermod|\.ssh' /root/defops/out/fs01/bash.txt
+PID	Process	CommandTime	Command
+14165	bash	2025-06-02 10:12:47.000000 UTC	useradd james -m -s /bin/bash
+14165	bash	2025-06-02 10:13:07.000000 UTC	/sbin/useradd james -m -s /bin/bash
+14204	bash	2025-06-02 10:13:35.000000 UTC	/sbin/useradd james -m -s /bin/bash
+14204	bash	2025-06-02 10:14:19.000000 UTC	echo 'james:secretP2ssw0rd!' | chpasswd
+14204	bash	2025-06-02 10:14:33.000000 UTC	usermod -aG sudo james
+14204	bash	2025-06-02 10:15:02.000000 UTC	mkdir /home/james/.ssh

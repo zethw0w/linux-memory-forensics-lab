@@ -1,0 +1,8 @@
+$ grep -E 'PID|\.strokes|printer_app|nc -nlvp|http.server|websockify' /root/defops/out/fs01/psaux.txt
+PID	PPID	COMM	ARGS
+562	1	.strokes	/home/mircoservice/.tmp/.strokes
+821	1	printer_app	/home/mircoservice/printer_app
+973	1	python3	python3 -m websockify 80 localhost:5901 -D
+15011	14847	nc	nc -nlvp 9898
+17374	17344	python3	python3 -m http.server 9090
+130240	973	python3	python3 -m websockify 80 localhost:5901 -D

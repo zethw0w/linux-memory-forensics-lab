@@ -1,0 +1,2 @@
+$ cd c3 && cat inode_0x8903b23667a8.dmp
+* * * * * cp /opt/.bashrc /root/.bashrc

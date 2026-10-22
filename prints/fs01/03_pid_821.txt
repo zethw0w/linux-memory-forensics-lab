@@ -1,0 +1,5 @@
+$ awk -F'\t' 'NR<4 || $1==821' /root/defops/out/fs01/psaux.txt
+Volatility 3 Framework 2.28.3
+
+PID	PPID	COMM	ARGS
+821	1	printer_app	/home/mircoservice/printer_app

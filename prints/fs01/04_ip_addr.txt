@@ -1,0 +1,11 @@
+$ cat /root/defops/out/fs01/ipaddr.txt
+Volatility 3 Framework 2.28.3
+
+NetNS	Index	Interface	MAC	Promiscuous	IP	Prefix	Scope Type	State
+
+4026531840	1	lo	00:00:00:00:00:00	False	127.0.0.1	8	host	UNKNOWN
+4026531840	1	lo	00:00:00:00:00:00	False	::1	128	host	UNKNOWN
+4026531840	2	ens5	02:83:88:6b:5a:1f	False	10.10.163.215	16	global	UP
+4026531840	2	ens5	02:83:88:6b:5a:1f	False	fe80::83:88ff:fe6b:5a1f	64	link	UP
+4026532265	1	lo	00:00:00:00:00:00	False	127.0.0.1	8	host	UNKNOWN
+4026532265	1	lo	00:00:00:00:00:00	False	::1	128	host	UNKNOWN

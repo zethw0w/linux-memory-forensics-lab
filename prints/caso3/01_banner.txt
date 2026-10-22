@@ -1,0 +1,6 @@
+$ md5sum linux.mem; /opt/vol3dev/bin/vol -q -f linux.mem banners.Banners 2>/dev/null | head -4
+895fed19ea1ad7bcd730e7418f670308  linux.mem
+Volatility 3 Framework 2.28.3
+
+Offset	Banner
+

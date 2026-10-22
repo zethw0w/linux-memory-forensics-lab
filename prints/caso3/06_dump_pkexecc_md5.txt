@@ -1,0 +1,11 @@
+$ cd c3 && file inode_0x8903b2364120.dmp && md5sum inode_0x8903b2364120.dmp && strings -n 5 inode_0x8903b2364120.dmp | grep -E '^(socket|connect|dup2|execve|htons|inet_addr|10\.0\.2\.72|/bin/sh|shell\.c)$'
+inode_0x8903b2364120.dmp: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=fd9f21bc0e05318396f2737a7a74c5ca659f3347, for GNU/Linux 3.2.0, not stripped
+0511ccaad402d6d13ce801e1e9136ba2  inode_0x8903b2364120.dmp
+socket
+htons
+connect
+inet_addr
+execve
+10.0.2.72
+/bin/sh
+shell.c
